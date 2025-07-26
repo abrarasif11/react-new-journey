@@ -1,16 +1,46 @@
+import Actor from "../Actor";
 import Todo from "../Todo";
 import "./App.css";
+import Book from "./Book";
+import Singer from "./Singer";
 
 function App() {
+  const actors = ["Shakib", "Nisho", "Siam", "Raaj"];
+  const singers = [
+    { name: "sefu", age: 87 },
+    { name: "Cfu", age: 27 },
+    { name: "efu", age: 17 },
+    { name: "pritom", age: 27 },
+  ];
+  const books = [
+    {
+      name:'physics', price: 100
+    },
+    {
+      name:'Math', price: 180
+    },
+    {
+      name:'Bangla', price: 50
+    },
+  ]
   return (
-    <>
-      <h1>Let's Begin TAANDOB</h1>
+    <> 
+     {
+      books.map((book) =>(
+        <Book book={book}/>
+      ))
+     }
 
-      <Todo learn="C++" isDone={true} />
-      <Todo learn="React " isDone={false} />
-      <Todo learn="JS" isDone={true} />
-      <Person />
-      <Student />
+
+      {singers.map((singer) => (
+        <Singer singer={singer} />
+      ))}
+
+      <h1>Actor of BD </h1>
+      <Actor name={"jayed"} />
+      {actors.map((actor) => (
+        <Actor name={actor} />
+      ))}
     </>
   );
 }
