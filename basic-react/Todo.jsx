@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Todo = ({ learn}) => {
+const Todo = ({ learn, isDone }) => {
   return (
-    <div>
-      
-      <h1>i have to learn :{learn} </h1>
-      
-    </div>
-  )
-}
+    <li>
+      {isDone ? "Finished " : "Work "} = {learn}
+    </li>
+  );
+};
 
 export default Todo;
