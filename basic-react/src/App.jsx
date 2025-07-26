@@ -1,4 +1,4 @@
-
+import Todo from '../Todo';
 import './App.css'
 
 function App() {
@@ -6,6 +6,10 @@ function App() {
   return (
     <>
       <h1>Let's Begin TAANDOB</h1>
+      
+      <Todo learn="C++"/>
+      <Todo learn="React "/>
+      <Todo learn="JS"/>
       <Person/>
       <Student/>
     </>
