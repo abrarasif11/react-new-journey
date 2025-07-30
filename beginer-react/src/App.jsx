@@ -1,5 +1,7 @@
 import './App.css'
 import Counter from './Counter';
+import Team from './Team';
+import Users from './Users';
 
 function App() {
 // function handleClick(){
@@ -17,7 +19,10 @@ const counting = (num) =>{
   return (
     <>
      <h2>beginer react</h2>
+     <Users/>
+     <Team/>
      <Counter/>
+
      <button onClick={() => counting(90)}>Click Here</button>
      <button onClick={handleClick}>click me</button>
     </>
