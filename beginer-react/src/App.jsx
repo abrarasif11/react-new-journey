@@ -1,5 +1,6 @@
 import './App.css'
 import Counter from './Counter';
+import Post from './post';
 import Team from './Team';
 import Users from './Users';
 
@@ -19,6 +20,7 @@ const counting = (num) =>{
   return (
     <>
      <h2>beginer react</h2>
+     <Post/>
      <Users/>
      <Team/>
      <Counter/>
