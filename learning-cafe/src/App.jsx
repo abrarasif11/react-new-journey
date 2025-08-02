@@ -1,14 +1,12 @@
-
-import './App.css'
+import "./App.css";
+import Header from "./Component/Header/Header";
 
 function App() {
-
   return (
     <>
-    <h1 className='text-3xl bg-red-300'>Hello tailwind</h1>
-        
+      <Header />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
