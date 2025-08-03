@@ -2,6 +2,7 @@ import React from "react";
 import { FaBookmark } from "react-icons/fa6";
 
 const Blog = ({ blog, handleBookMark, handleMarkasRead}) => {
+  const {id,reading_time} = blog;
   return (
     <div className="mb-20">
       <img
@@ -36,7 +37,7 @@ const Blog = ({ blog, handleBookMark, handleMarkasRead}) => {
         ))}
       </p>
       <button 
-      onClick={() => handleMarkasRead(blog.reading_time)}
+      onClick={() => handleMarkasRead(id,reading_time)}
       className="text-blue-700 underline">Mark As Read</button>
     </div>
   );
