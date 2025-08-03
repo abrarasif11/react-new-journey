@@ -5,18 +5,17 @@ import Bookmarks from "./Component/Bookmark/Bookmarks";
 import Header from "./Component/Header/Header";
 
 function App() {
-  const [bookMarks, setBookMarks] = useState([]);
-
-  const handleBookMark = blog => {
-    const newBookmarks = [...bookMarks,blog];
-    setBookMarks(newBookmarks);   
-  }
+  const [bookMarks, setBookmarks] = useState([]);
+  const handleBookMark = (blog) => {
+  const newBookmark = [...bookMarks, blog]
+  setBookmarks(newBookmark);
+  };
   return (
     <>
       <Header />
       <div className="md:flex max-w-7xl mx-auto">
-      <Blogs handleBookMark={handleBookMark}/>
-      <Bookmarks bookMarks={bookMarks}/>
+        <Blogs handleBookMark={handleBookMark} />
+        <Bookmarks bookMarks={bookMarks} />
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBookmark } from "react-icons/fa6";
 
-const Blog = ({ blog , handleBookMark}) => {
+const Blog = ({ blog, handleBookMark}) => {
   return (
     <div className="mb-20">
       <img
@@ -22,7 +22,7 @@ const Blog = ({ blog , handleBookMark}) => {
         </div>
         <div className="m-5 ">
           <span>{blog.reading_time} min read</span>
-          <button onClick={handleBookMark} className="tex-2xl text-green-500 ml-2">
+          <button onClick={() => handleBookMark(blog)} className="tex-2xl text-green-500 ml-2">
             <FaBookmark />
           </button>
         </div>
